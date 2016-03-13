@@ -1,0 +1,147 @@
+＊{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+body {
+  font-family: YuGothic, "游ゴシック", "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+  background-color: #ddd;
+  font-size: 14px;
+}
+
+::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #383634;
+}
+
+nav ul {
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 15px 10px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.about {
+    margin-top: 0px;
+    padding: 170px 30px 170px 80px;
+    text-align: center;
+    background-color: pink;
+    color: #fff;
+}
+
+.site-title {
+    margin: 50px 0 40px;
+    font-size: 76px;
+}
+
+.works {
+    background-color: #383634;
+    padding: 80px 0px;
+    margin-top: 0px;
+    color: #fff;
+    width: 100%;
+    height: 700px;
+}
+.works h2{
+    font-size: 38px;
+    text-align: center;
+}
+.work-image {
+    display: block;
+    width: 100%;
+    
+}
+
+.work-wrapper {
+    display: table;
+    width: 100%;
+    margin-top: 80px;
+    table-layout: fixed;
+   
+   
+}
+
+.work-box {
+    position: relative;
+    display: table-cell;
+   
+   
+   
+}
+
+.work-box::after {
+    content:  '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.2;
+    transform: scaleY(-1);
+}
+.work-box.boyatbeach::after{
+    background-image: url('../images/boyatbeach.jpg')
+}
+
+.work-box.kidsplaying::after{
+    background-image: url('../images/kidsplaying.jpg')
+}
+
+.work-box.loveglobe::after{
+    background-image: url('..images/loveglobe.jpg')
+}
+
+.work-box.tricycle::after{
+    background-image: url('..images/tricycle.jpg')
+}
+
+.work-description{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+}
+
+.work-description-inner{
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    
+}
+.work-text {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.footer{
+    padding: 12px 0;
+    font-size: 1.3rem;
+    background-color: #383634;
+    color: #fff;
+    text-align: center;
+}
+    
+
